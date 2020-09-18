@@ -19,6 +19,8 @@ Objects {
   ChildIds: 5923003282004487933
   ChildIds: 10005074784157121906
   ChildIds: 14982843161775482339
+  ChildIds: 5674108248211385966
+  ChildIds: 5268636075168672857
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -28,6 +30,116 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 5268636075168672857
+  Name: "Team Settings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Settings {
+    IsDefault: true
+    TeamSettings {
+      TeamMode_v2 {
+        Value: "mc:eteammode:teamsvs"
+      }
+    }
+  }
+}
+Objects {
+  Id: 5674108248211385966
+  Name: "Props"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 564952614683939387
+  ChildIds: 3274030964537923137
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 3274030964537923137
+  Name: "Collectable Props"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5674108248211385966
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Collectable Props"
+  }
+}
+Objects {
+  Id: 564952614683939387
+  Name: "FixedProps"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5674108248211385966
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "FixedProps"
   }
 }
 Objects {
@@ -520,6 +632,10 @@ Objects {
   }
   ParentId: 5923003282004487933
   UnregisteredParameters {
+    Overrides {
+      Name: "cs:boneCount"
+      Bool: false
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -572,7 +688,6 @@ Objects {
       }
       AppearanceChannelingTime: 2
       MountChannelingTime: 2
-      FlipOnMultiJump: true
     }
   }
 }
