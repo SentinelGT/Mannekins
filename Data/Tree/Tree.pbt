@@ -16,15 +16,11 @@ Objects {
   }
   ChildIds: 15113971017304156731
   ChildIds: 16813558807825262224
-  ChildIds: 18138298815820289438
-  ChildIds: 5268636075168672857
   ChildIds: 5923003282004487933
   ChildIds: 10005074784157121906
   ChildIds: 14982843161775482339
   ChildIds: 5674108248211385966
-  ChildIds: 4246572393940037735
-  ChildIds: 15368566066783481046
-  ChildIds: 4012589177124334526
+  ChildIds: 5268636075168672857
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -37,147 +33,31 @@ Objects {
   }
 }
 Objects {
-  Id: 4012589177124334526
-  Name: "Flower Bed"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7545445209455211392
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Flower Bed"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -1725
-            Y: -615
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -44.9999695
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 9085874654278908429
-    }
-  }
-}
-Objects {
-  Id: 15368566066783481046
-  Name: "Creepy Mall Fountain"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7023297614302682460
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Creepy Mall Fountain"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -705
-            Y: -105
-            Z: 30
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14226209562526228034
-    }
-  }
-}
-Objects {
-  Id: 4246572393940037735
-  Name: "PlacedBoneTrigger"
+  Id: 5268636075168672857
+  Name: "Team Settings"
   Transform {
     Location {
-      X: 755
-      Y: 615
-      Z: 185
     }
     Rotation {
     }
     Scale {
-      X: 3.75
-      Y: 3.75
-      Z: 3.75
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 16271705983389136742
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Trigger {
+  Settings {
+    IsDefault: true
     TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 16271705983389136742
-  Name: "PlacedBoneFemur"
-  Transform {
-    Location {
-      X: 5
-      Z: 10
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.5
-      Y: 0.5
-      Z: 0.5
-    }
-  }
-  ParentId: 4246572393940037735
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 10446945913836910618
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
+      TeamMode_v2 {
+        Value: "mc:eteammode:teamsvs"
       }
     }
   }
@@ -808,79 +688,6 @@ Objects {
       }
       AppearanceChannelingTime: 2
       MountChannelingTime: 2
-    }
-  }
-}
-Objects {
-  Id: 5268636075168672857
-  Name: "Team Settings"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Settings {
-    IsDefault: true
-    TeamSettings {
-      TeamMode_v2 {
-        Value: "mc:eteammode:teamsvs"
-      }
-    }
-  }
-}
-Objects {
-  Id: 18138298815820289438
-  Name: "UI Container"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Canvas {
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
     }
   }
 }
