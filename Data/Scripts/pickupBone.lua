@@ -3,7 +3,7 @@
 local propBoneCount = script:GetCustomProperty("boneCount")
 boneCount = false
 
---When a player picks up a bone piece
+--When a player wanders into trigger
 function pickupBonePiece(trigger, object)
 	if object ~= nil and object:IsA("Player") then
 		-- object:AddResource("boneCount", 1)
